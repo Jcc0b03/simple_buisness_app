@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/form_wycena.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Wycena</title>
+</head>
+<body>
+    <div class="content-container">
+        <div class="back-button"><i class="fas fa-arrow-left"></i></div>
+        <div class="header"><p>Oblicz wycenę twojego projektu</p></div>
+
+        <div class="input-container"><label>Projekt graficzny: <input type="checkbox" class="input-checkbox" id="graficzny"></label></div>
+        <div class="input-container"><label>Liczba podstron statycznych: <input type="number" min="0" max="100" class="input-number" id="podstrony"></label></div>
+        <div class="input-container"><label>System zarządzania treścią CMS: <input type="checkbox" class="input-checkbox" id="CMS"></label></div>
+        <div class="input-container"><label>Czas wykonania ekspres: <input type="checkbox" class="input-checkbox" id="ekspres"></label></div>
+        <div class="input-container"><label>Optymalizacja SEO: <input type="checkbox" class="input-checkbox" id="SEO"></label></div>
+        <div class="input-container"><input type="button" value="Oblicz" class="input-button" id="submit"></div>
+    </div>
+    <div class="cena-message"><p id="wycena"></p></div>
+    <script src="static/wycena.js"></script>
+</body>
+</html>

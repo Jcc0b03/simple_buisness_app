@@ -1,0 +1,164 @@
+/*Czcionki*/
+@font-face {
+    font-family: Manrope-Regular;
+    src: url("fonts/Manrope-Regular.ttf");
+}
+
+@font-face {
+    font-family: Manrope-Bold;
+    src: url("fonts/Manrope-Bold.ttf");
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    height: 100px;
+
+    /*na potrzeby testow
+    background-color: whitesmoke;*/
+}
+
+.header-text{
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.header-text-regular{
+    font-family: Manrope-Regular;
+    font-size: 35px;
+}
+
+.header-text-bold{
+    font-family: Manrope-Bold;
+    font-size: 35px;
+    color: dodgerblue;
+}
+
+#date-span{
+    font-family: Manrope-Regular;
+    font-size: 20px;
+}
+
+.header i{
+    float: right;
+    font-size: 60px;
+    margin-right: 50px;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    transition: linear 100ms;
+    color: black;
+}
+
+.header i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/*pojawiajacy sie kafelek od wylogowywania na małych ekranach*/
+#kafelek-wylogowywanie{
+    display: none;
+}
+
+#kafelek-wylogowywanie:hover{
+    box-shadow: 0px 0px 25px 0px red;
+}
+
+#kafelek-wylogowywanie i{
+    font-size: 128px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+}
+
+/*przycisk od wylogowywania znika przy za małym ekranie
+i pojawienie się kafelka od wylogowania*/
+@media only screen and (max-width: 700px) {
+    .header i{
+        display: none;
+    }
+
+    #kafelek-wylogowywanie{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    #date-span{
+        display: none;
+    }
+}
+
+.kafelki{
+    position: absolute;
+    top:100px;
+    left: calc(50% + 30px);
+    width: 100%;
+    transform: translateX(-50%);
+    padding-bottom: 30px;
+}
+
+.kafelek-container{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1440px;
+}
+
+.kafelek{
+    float: left;
+    width: 430px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px -5px rgba(66, 68, 90, 1);
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.kafelek:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 25px 0px dodgerblue;
+}
+
+.kafelek img{
+    width: 128px;
+    height: 128px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.kafelek-header{
+    position: relative;
+    top: -150px;
+    font-family: Manrope-Bold;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.icon-license{
+    position: relative;
+    bottom: -30px;
+    right: -75px;
+    color: black;
+    font-family: Manrope-Regular;
+    font-size: 10px;
+}
+
+.kafelek a{
+    text-decoration: none;
+    color: black;
+}

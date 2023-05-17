@@ -1,0 +1,161 @@
+/*czcionki*/
+@font-face {
+    font-family: Manrope-Bold;
+    src: url(fonts/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: Manrope-Regular;
+    src: url(fonts/Manrope-Regular.ttf);
+}
+
+/*tlo strony*/
+body{
+    background-color: white;
+}
+
+.login-form{
+    /*wycentrowanie formularza na stronie*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 364px;
+    min-width: 280px;
+    border-radius: 20px;
+
+    /*tlo formularza*/
+    background-color: whitesmoke;
+    -webkit-box-shadow: 8px 8px 15px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 15px 0px rgba(66, 68, 90, 1);   
+}
+
+/*przycisk powrotu do strony głownej*/
+.back-button{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    background-color: lightgray;
+    transition: ease 0.3s;
+    font-size: 25px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/*ikona na przycisku*/
+.back-button i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+}
+
+/*ikona po najechaniu myszka*/
+.back-button:hover{
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+}
+
+/*kontener naglowka formularza(obrazek?)*/
+.login-form-header{
+    top: 30;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+/*tekst naglowka formularza*/
+.login-form-header p{
+    position: relative;
+    font-family: Manrope-Bold, sans-serif;
+    font-size: 30px;
+
+    top: 50%;
+    transform: translateY(-50%);
+    font-style: normal;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+/* kreska miedzy polami do wprowadzania a naglowkiem
+.login-form hr{
+    width: 90%;
+    border: solid grey
+}*/
+
+/*wycentrowanie zawartosci formularza*/
+.login-form-content{
+    text-align: center;
+    display: block;
+}
+
+.input-container{
+    margin-bottom: 10px;
+}
+
+.login-form-content i{
+    padding-top: 13.5px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+/*pola wprowadzania*/
+.login-form-input{
+    width: 70%;
+    font-family: Manrope-Regular, sans-serif;
+    outline: none;
+    font-size: 20px;
+    border-radius: 0px;
+    border: solid 2px grey;
+    padding: 4px;
+}
+
+/*pola wprowadzania aktywne*/
+.login-form-input:focus{
+    border: solid 2px dodgerblue;
+}
+
+/*przycisk logowania*/
+.login-form-button{
+    width: 70%;
+    font-family: Manrope-Bold, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    outline: none;
+    transition: ease 0.1s;
+}
+
+/*przycisk logowania po najechaniu*/
+.login-form-button:hover{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#zle-dane{
+    position: absolute;
+    display: table-cell;
+    text-align: center;
+    left: 50%;
+    top: calc(50% + 230px);
+    transform: translate(-50%, -50%);
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-family: Manrope-Bold;
+    -webkit-box-shadow: 8px 8px 15px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 15px 0px rgba(66, 68, 90, 1);
+    border-radius: 20px; 
+}

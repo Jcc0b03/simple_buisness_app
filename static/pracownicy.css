@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Manrope-Bold;
+    src: url("fonts/Manrope-Bold.ttf");
+}
+
+@font-face {
+    font-family: Manrope-Regular;
+    src: url("fonts/Manrope-Regular.ttf");
+}
+
+.back-button{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 70px;
+    width: 150px;
+
+    background-color: rgb(83, 168, 254);
+    -webkit-box-shadow: 8px 8px 15px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 15px 0px rgba(66, 68, 90, 1);  
+    color: black;
+    transition: linear 0.1s;
+}
+
+.back-button i{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 60px;
+}
+
+.back-button:hover{
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.header{
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    height: 70px;
+    width: calc(100vw - 150px);
+
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: whitesmoke;
+    -webkit-box-shadow: 8px 8px 15px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 15px 0px rgba(66, 68, 90, 1);  
+}
+
+.header-text{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-family: Manrope-Bold;
+    font-size: 35px;
+}
+
+.nav{
+    position: absolute;
+    top: 110px;
+    left: 0px;
+
+    width: 100vw;
+    height: 40px;
+    text-align: center;
+}
+
+.nav button{
+    background-color: rgb(83, 168, 254);
+    outline: none;
+    font-family: Manrope-Regular;
+    font-size: 25px;
+    color: black;
+    border: none;  
+    
+    height: 40px;
+    width: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+    transition: linear 0.1s;
+}
+
+.nav button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: dodgerblue;
+    font-family: Manrope-Bold;
+}
+
+.table-container{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.table-container table{
+    background-color: whitesmoke;
+    border-collapse: collapse;
+    width: 90vw;
+    min-width: 720px;
+    text-align: center;
+    font-family: Manrope-Regular;
+    font-size: 20px;
+}
+
+.table-container table, td{
+    border: 2px solid lightgray;
+}
+
+.table-container td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.table-header{
+    font-family: Manrope-Bold;
+}
+
+.table-row:hover{
+    -webkit-box-shadow: 8px 8px 15px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 15px 0px rgba(66, 68, 90, 1); 
+}
