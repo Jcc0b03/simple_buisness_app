@@ -1,4 +1,5 @@
 <?php
+    #hello world
     session_start();
     if($_SESSION["uprawnienia"]!=1&&$_SESSION["uprawnienia"]!=2){
         header("Location: logowanie.php");
